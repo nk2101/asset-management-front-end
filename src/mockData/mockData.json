@@ -1,0 +1,136 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "department": "IT",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "department": "HR",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "department": "Finance",
+      "status": "active"
+    }
+  ],
+  "assets": [
+    {
+      "id": 1,
+      "serialNumber": "SN12345",
+      "make": "Dell",
+      "model": "XPS 13",
+      "type": "Laptop",
+      "branch": "New York",
+      "value": 1200
+    },
+    {
+      "id": 2,
+      "serialNumber": "SN67890",
+      "make": "Apple",
+      "model": "iPhone 14",
+      "type": "Mobile",
+      "branch": "San Francisco",
+      "value": 999
+    },
+    {
+      "id": 3,
+      "serialNumber": "SN11111",
+      "make": "Bosch",
+      "model": "Drill Machine",
+      "type": "Tool",
+      "branch": "Chicago",
+      "value": 250
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptop"
+    },
+    {
+      "id": 2,
+      "name": "Mobile"
+    },
+    {
+      "id": 3,
+      "name": "Tool"
+    }
+  ],
+  "stock": [
+    {
+      "branch": "New York",
+      "type": "Laptop",
+      "quantity": 5,
+      "value": 6000
+    },
+    {
+      "branch": "San Francisco",
+      "type": "Mobile",
+      "quantity": 8,
+      "value": 7992
+    },
+    {
+      "branch": "Chicago",
+      "type": "Tool",
+      "quantity": 12,
+      "value": 3000
+    }
+  ],
+  "issuedAssets": [
+    {
+      "id": 1,
+      "employee": {
+        "id": 1,
+        "name": "John Doe"
+      },
+      "asset": {
+        "id": 2,
+        "serialNumber": "SN67890",
+        "make": "Apple"
+      },
+      "issueDate": "2025-04-01T09:00:00Z"
+    }
+  ],
+  "assetHistory": {
+    "1": [
+      {
+        "date": "2025-01-10T08:30:00Z",
+        "action": "Purchased",
+        "employeeName": null,
+        "details": "Bought from supplier ABC"
+      },
+      {
+        "date": "2025-03-15T10:00:00Z",
+        "action": "Issued",
+        "employeeName": "John Doe",
+        "details": "Issued to John Doe"
+      },
+      {
+        "date": "2025-04-10T14:00:00Z",
+        "action": "Returned",
+        "employeeName": "John Doe",
+        "details": "Reason: Upgrade"
+      }
+    ],
+    "2": [
+      {
+        "date": "2025-02-05T10:15:00Z",
+        "action": "Purchased",
+        "employeeName": null,
+        "details": "Bought from supplier XYZ"
+      },
+      {
+        "date": "2025-04-01T09:00:00Z",
+        "action": "Issued",
+        "employeeName": "Jane Smith",
+        "details": "Issued to Jane Smith"
+      }
+    ]
+  }
+}
